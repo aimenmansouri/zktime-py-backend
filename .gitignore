@@ -41,7 +41,6 @@ instance/
 
 # Env files
 .env
-.env.*
 
 # MyPy, Pylint, etc.
 .mypy_cache/
