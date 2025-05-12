@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Python environment files
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Logs and local state
+*.log
+*.pot
+*.pyc
+
+# Test and coverage reports
+.coverage
+htmlcov/
+.tox/
+.noseids
+.pytest_cache/
+
+# Flask-specific
+instance/
+*.sqlite3
+
+# Env files
+.env
+.env.*
+
+# MyPy, Pylint, etc.
+.mypy_cache/
+.pyre/
+.pylint.d/
+
+# Others
+coverage.xml
