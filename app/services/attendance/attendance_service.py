@@ -1,12 +1,12 @@
 from zk import ZK, const
-from datetime import datetime
+from datetime import datetime , timedelta
 
 def get_attendance(device_ip , start_date , end_date) :
     conn = None
     zk = ZK(device_ip, port=4370, timeout=10)
 
     start_date = datetime.strptime(start_date, "%Y-%m-%d")
-    end_date = datetime.strptime(end_date, "%Y-%m-%d")
+    end_date = datetime.strptime(end_date, "%Y-%m-%d") + timedelta(days=1)
 
     try:
         print('Connecting to device ...')

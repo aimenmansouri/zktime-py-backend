@@ -16,11 +16,7 @@ def get_users(device_ip) :
         user_dicts = []
         for user in users :
             user_dicts.append({
-                        'uid': user.uid,
-                        'userid': user.user_id,
                         'name': user.name,
-                        'privilege': user.privilege,
-                        'group_id': user.group_id,
                         'user_id': user.user_id,
                     })
         return user_dicts
