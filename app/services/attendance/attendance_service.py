@@ -23,6 +23,7 @@ def get_attendance(device_ip , start_date , end_date) :
             atts_dicts.append({
                         'user_id': att.user_id,
                         'timestamp': att.timestamp,
+                        'att_uid' : f"{att.uid}-{device_ip}",
                     })
         return atts_dicts
     except Exception as e:
