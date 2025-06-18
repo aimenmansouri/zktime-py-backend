@@ -16,6 +16,7 @@ def get_users(device_ip) :
         user_dicts = []
         for user in users :
             user_dicts.append({
+                        # here you can add additional user properties here as needed
                         'name': user.name,
                         'user_id': user.user_id,
                     })

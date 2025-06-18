@@ -21,6 +21,7 @@ def get_attendance(device_ip , start_date , end_date) :
         atts_dicts = []
         for att in filtred_atts :
             atts_dicts.append({
+                        # here you can add additional attendance properties here as needed
                         'user_id': att.user_id,
                         'timestamp': att.timestamp,
                         'att_uid' : f"{att.uid}-{device_ip}",
